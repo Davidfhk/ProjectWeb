@@ -1,7 +1,7 @@
 # ProyectoWeb
 ## ProyectoWeb JavaScript
 
-### Este es un proyecto del Curso de Victor robles "Master en JavaScript"
+###### Este es un proyecto del Curso de Victor Robles "Master en JavaScript"
 
 ## Requisitos:
 
