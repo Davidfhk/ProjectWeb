@@ -141,6 +141,10 @@ form input[type='submit']{
 	cursor: pointer;
 }
 
+#about p{
+	text-align: center;
+}
+
 footer{
 	font-family: "Helvetica","Arial";
 	color: white;
@@ -194,4 +198,13 @@ footer{
 	text-decoration: none;
 	display: block;
 	float: right;
+}
+
+#logout{
+	float: right;
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-right: 30px;
 }
