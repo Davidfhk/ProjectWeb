@@ -65,4 +65,16 @@ $(document).ready(function(){
 		theme.attr('href','css/blue.css');
 		localStorage.setItem("fondo","blue");
 	});
+
+// Scroll top
+
+	$('.top').click((e)=>{
+		e.preventDefault();
+
+		$('html,body').animate({
+			"scrollTop": 0
+		},500);
+
+		return false;
+	})
 })
