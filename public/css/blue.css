@@ -1,0 +1,23 @@
+body{
+	background: url("../img/fondo-blue.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+
+#logo{
+	background: #1F8764;
+}
+
+#menu{
+	background: #333;
+}
+
+#menu ul li:hover{
+	background: #1F8764;
+}
+
+.button-more{
+	background: #1F8764;
+}

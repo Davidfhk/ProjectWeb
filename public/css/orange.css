@@ -1,0 +1,23 @@
+body{
+	background: url("../img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+
+#logo{
+	background: #ff9f3f;
+}
+
+#menu{
+	background: #333;
+}
+
+#menu ul li:hover{
+	background: #ff9f3f;
+}
+
+.button-more{
+	background: #ff9f3f;
+}
