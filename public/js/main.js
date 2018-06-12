@@ -45,5 +45,17 @@ $(document).ready(function(){
 	});
 
 
+// Selector theme
 
+	var theme = $('#theme');
+
+	$('#to-orange').click(()=>{
+		theme.attr('href','css/orange.css');
+	});
+	$('#to-green').click(()=>{
+		theme.attr('href','css/green.css');
+	});
+	$('#to-blue').click(()=>{
+		theme.attr('href','css/blue.css');
+	});
 })
