@@ -46,16 +46,23 @@ $(document).ready(function(){
 
 
 // Selector theme
-
 	var theme = $('#theme');
+
+	if(localStorage.getItem("fondo") !== null){
+		var color = localStorage.getItem("fondo");
+			theme.attr('href','css/'+color+'.css');
+	}
 
 	$('#to-orange').click(()=>{
 		theme.attr('href','css/orange.css');
+		localStorage.setItem("fondo","orange");
 	});
 	$('#to-green').click(()=>{
 		theme.attr('href','css/green.css');
+		localStorage.setItem("fondo","green");
 	});
 	$('#to-blue').click(()=>{
 		theme.attr('href','css/blue.css');
+		localStorage.setItem("fondo","blue");
 	});
 })
