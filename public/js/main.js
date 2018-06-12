@@ -47,8 +47,8 @@ $(document).ready(function(){
 
 // Selector theme
 	var theme = $('#theme');
-
-	if(localStorage.getItem("fondo") !== null){
+	var fondo = localStorage.getItem("fondo")
+	if( fondo != null && fondo != "undefined"){
 		var color = localStorage.getItem("fondo");
 			theme.attr('href','css/'+color+'.css');
 	}
@@ -77,4 +77,25 @@ $(document).ready(function(){
 
 		return false;
 	})
+
+// Login false
+
+	$('#login form').submit(()=>{
+		var name = $('#name').val();
+		localStorage.setItem('form_name',name);
+	});
+	var name = localStorage.getItem('form_name');
+	if(name != null && name != "undefined")
+	{
+		$('#about p').html('<strong> Welcome '+ name +' </strong>');
+		$('#login').hide();
+		$('#menu ul').append('<a href="#" id="logout">Logout</a>');
+
+	}
+	$('#logout').click(()=>{
+		localStorage.clear();
+		location.reload();
+	})
+
+
 })
