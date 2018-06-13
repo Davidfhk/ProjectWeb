@@ -14,6 +14,9 @@
 ### Guia de uso
 
       /public/home 
+      /public/about
+      /public/reloj
+      /public/contact
     
 
 
