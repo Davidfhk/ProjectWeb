@@ -54,18 +54,22 @@ $(document).ready(function(){
 	if( fondo != null && fondo != "undefined"){
 		var color = localStorage.getItem("fondo");
 			theme.attr('href','css/'+color+'.css');
+			$('#reloj').css('border','2px solid '+fondo);
 	}
 
 	$('#to-orange').click(()=>{
 		theme.attr('href','css/orange.css');
+		$('#reloj').css('border','2px solid orange');
 		localStorage.setItem("fondo","orange");
 	});
 	$('#to-green').click(()=>{
 		theme.attr('href','css/green.css');
+		$('#reloj').css('border','2px solid green');
 		localStorage.setItem("fondo","green");
 	});
 	$('#to-blue').click(()=>{
 		theme.attr('href','css/blue.css');
+		$('#reloj').css('border','2px solid blue');
 		localStorage.setItem("fondo","blue");
 	});
 
@@ -103,5 +107,13 @@ $(document).ready(function(){
 	if(window.location.href.indexOf('/about') > -1)
 	{
 		$('#accordion').accordion();
+	}
+
+	if(window.location.href.indexOf('/reloj') > -1)
+	{
+		setInterval(()=>{
+			var reloj = moment().format('hh:mm:ss');
+			$('#reloj').html(reloj);
+		},1000)
 	}
 })
