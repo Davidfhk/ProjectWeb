@@ -116,4 +116,18 @@ $(document).ready(function(){
 			$('#reloj').html(reloj);
 		},1000)
 	}
+
+	// Form contact
+	if(window.location.href.indexOf('/contact') > -1)
+	{
+		$.validate({
+			"lang":"es"
+		});
+
+		$("input[name='date']").datepicker(
+		{
+			"dateFormat":'dd/mm/yy'
+		})
+	}
+
 })
