@@ -104,7 +104,7 @@
 }
 
 #sidebar h4{
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
 	line-height: 10px;
@@ -207,4 +207,21 @@ footer{
 	text-decoration: none;
 	padding-left: 30px;
 	padding-right: 30px;
+}
+#accordion{
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+}
+#content{
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+
+}
+
+#content h2{
+	font-family: "Helvetica","Arial";
+	margin-top: 20px;
+
 }
