@@ -21,6 +21,12 @@ class ProjectController
 
 	public function home (Request $request, Response $response, $args)
     {  
-        return $this->view->render($response, 'index.html');
+        return $this->view->render($response, 'index.twig');
+    }
+
+
+	public function about (Request $request, Response $response, $args)
+    {  
+        return $this->view->render($response, 'about.twig');
     }
 }
