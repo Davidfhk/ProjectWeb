@@ -29,4 +29,14 @@ class ProjectController
     {  
         return $this->view->render($response, 'about.twig');
     }
+
+	public function reloj (Request $request, Response $response, $args)
+    {  
+        return $this->view->render($response, 'reloj.twig');
+    }
+
+	public function contact (Request $request, Response $response, $args)
+    {  
+        return $this->view->render($response, 'contact.twig');
+    }
 }
