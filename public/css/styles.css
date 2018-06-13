@@ -123,7 +123,9 @@
 
 form input[type='text'],
 form input[type='email'],
-form input[type='password']{
+form input[type='password'],
+form input[type='number'],
+form select{
 	padding: 5px;
 	border-radius: 2px;
 	border:1px solid #ccc;
@@ -212,11 +214,16 @@ footer{
 #box{
 	width: 60%;
 	float: left;
-	margin-top: 40px;
+	
 }
 
 #accordion{
 	margin-top: 20px;
+}
+
+#content{
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 #content h2{
@@ -226,7 +233,7 @@ footer{
 }
 
 #reloj{
-	width: 30%;
+	width: 32%;
 	color: #333;
 	font-size: 40px;
 	font-weight: bold;
@@ -234,4 +241,17 @@ footer{
 	margin: 0px auto;
 	border: 2px solid #333;
 	border-radius: 10px;
+}
+
+#form_contact{
+	width: 50%;
+	margin-top: 15px;
+
+}
+
+#form_contact label{
+	font-family: "Helvetica","Arial";
+	width: 100%;
+	margin-top: 5px;
+	display: block;
 }
