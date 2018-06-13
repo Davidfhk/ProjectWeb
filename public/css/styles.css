@@ -208,20 +208,30 @@ footer{
 	padding-left: 30px;
 	padding-right: 30px;
 }
-#accordion{
-	width: 50%;
-	float: left;
-	margin-top: 10px;
-}
-#content{
-	padding-left: 30px;
-	padding-right: 30px;
-	display: block;
 
+#box{
+	width: 60%;
+	float: left;
+	margin-top: 40px;
+}
+
+#accordion{
+	margin-top: 20px;
 }
 
 #content h2{
 	font-family: "Helvetica","Arial";
 	margin-top: 20px;
 
+}
+
+#reloj{
+	width: 30%;
+	color: #333;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: "Helvetica","Arial";
+	margin: 0px auto;
+	border: 2px solid #333;
+	border-radius: 10px;
 }
