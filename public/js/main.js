@@ -121,7 +121,10 @@ $(document).ready(function(){
 	if(window.location.href.indexOf('/contact') > -1)
 	{
 		$.validate({
-			"lang":"es"
+			"lang":"es",
+			errorMessagePosition : 'top',
+			scrollToTopOnError : false,
+
 		});
 
 		$("input[name='date']").datepicker(
