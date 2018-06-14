@@ -255,3 +255,20 @@ footer{
 	margin-top: 5px;
 	display: block;
 }
+
+div.form-error{
+	width: 180%;
+	font-size: 12px;
+	border: 2px solid red;
+	background: pink;
+}
+
+span.form-error{
+    width: 90%;
+    font-size: 12px;
+    float: left;
+    margin-top: 20px;
+    border: 2px solid red;
+    background: pink;
+    padding: 10px;
+}
